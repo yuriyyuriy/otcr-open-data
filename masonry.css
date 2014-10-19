@@ -1,0 +1,58 @@
+@charset "utf-8";
+@font-face{
+  font-family: 'SIMPLIFICA'; 
+  src: url('SIMPLIFICA.tff');
+}
+/*
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}*/
+
+body { font-family: sans-serif; }
+
+.masonry {
+  /*background: #444;*/
+  /*max-width: 1000px;*/
+  text-align:center;
+  margin-top: 20px;
+}
+
+.masonry .item,
+.masonry .grid-sizer {
+  width:  200px;
+}
+
+.masonry .item,
+.masonry .grid-sizer {
+  float: left;
+  background: #fff;
+  margin-bottom: 15px;
+  position: relative;
+  height:200px;
+}
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(256, 256, 256, 0.50);
+  color: #000;
+  font-size: 30px;
+  word-spacing:5px;
+  padding:60px 10px 0px 10px;
+  text-align:center;
+  font-family: 'SIMPLIFICA'; 
+  font-weight:bold;
+
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility opacity 0.2s;
+}
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
